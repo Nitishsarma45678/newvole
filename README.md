@@ -48,8 +48,8 @@ Open index.html in your browser to view the project locally.
 💡 Inspiration
 This project was created as a heartfelt gift and a demonstration of creative coding.
 
-🖊️ Author
-Nitish Sarma
+🖊️ Author  
+Nitish Sarma  
 Crafted with care and creativity.
 
 ## 📜 License
