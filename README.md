@@ -46,6 +46,7 @@ Open index.html in your browser to view the project locally.
 - `script.js`: JavaScript for interactivity.
 
 💡 Inspiration
+
 This project was created as a heartfelt gift and a demonstration of creative coding.
 
 🖊️ Author  
