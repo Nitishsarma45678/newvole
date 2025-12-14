@@ -1,19 +1,95 @@
-body{margin:0;padding:0;background:#ffe;font-size:14px;font-family:'Microsoft YaHei','SimSun',sans-serif;color:#231F20;overflow:auto}
-a {color:#000;font-size:14px;}
-#main{width:100%;}
-#wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:10px;}
-#text{width:272px;
-height:560px;
-left:188px;
-top:80px;position:absolute;
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffe;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei','SimSun',sans-serif;
+    color: #231F20;
+    overflow: auto;
 }
-#code{display:none;font-size:18px;}
-#clock-box {position:absolute;left:40px;top:550px;font-size: 23px;display:none;}
-#clock-box a {font-size:28px;text-decoration:none;}
-#clock{margin-left:48px;}
-#clock .digit {font-size:64px;}
-#canvas{margin:0 auto;width:1100px;height:680px;}
-#error{margin:0 auto;text-align:center;margin-top:60px;display:none;}
-.hand{cursor:pointer;}
-.say{margin-left:5px;}
-.space{margin-right:150px;}
+
+a {
+    color: #000;
+    font-size: 14px;
+}
+
+#main {
+    width: 100%;
+}
+
+#wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 680px;
+    margin-top: 10px;
+}
+
+#text {
+    width: 272px;
+    height: 560px;
+    left: 188px;
+    top: 80px;
+    position: absolute;
+}
+
+#code {
+    display: none;
+    font-size: 18px;
+}
+
+/* =========================
+   STOPWATCH (FINAL FIX)
+   ========================= */
+#clock-box {
+    position: absolute;
+    left: 40px;
+    top: 560px;
+    font-size: 20px;          /* slightly reduced label size */
+    z-index: 20;              /* always above canvas */
+    display: none;
+}
+
+#clock {
+    white-space: nowrap;      /* NEVER wrap (prevents seconds drop) */
+    line-height: 1.1;
+}
+
+#clock .digit {
+    font-size: 52px;          /* reduced from 64 */
+    margin-right: 4px;
+}
+
+#clock-box a {
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* =========================
+   CANVAS & OTHER ELEMENTS
+   ========================= */
+#canvas {
+    margin: 0 auto;
+    width: 1100px;
+    height: 680px;
+    z-index: 1;
+}
+
+#error {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.say {
+    margin-left: 5px;
+}
+
+.space {
+    margin-right: 150px;
+}
