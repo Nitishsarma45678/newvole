@@ -1,3 +1,4 @@
+
 /*
  * http://love.hackerzhou.me
  */
@@ -105,7 +106,7 @@ function updateTime(startDate) {
     var yearsTogether = currentYear - startYear;
     
     // Dynamically set the target for the CURRENT year's March 5th at 6:15 PM
-    var targetTime = new Date(currentYear, 2, 18, 15, 20, 0).getTime(); 
+    var targetTime = new Date(currentYear, 2, 5, 13, 20, 0).getTime(); 
     var endTime = new Date(currentYear, 2, 6, 18, 15, 0).getTime(); // Exactly 24 hours later
     var now = currentDate.getTime();
     
